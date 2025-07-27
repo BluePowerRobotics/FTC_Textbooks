@@ -51,6 +51,7 @@ ADB 是 Android SDK 中的命令行工具，用于与 Android 设备通信并执
            adb version
            ```
            ![第四步(这里显示error是因为没有连hub网络)](./RES/WINDOWS_ADB_CONFIG.PNG)
+         - *这里显示error是因为没有连hub网络*
 3. 设备端配置：`如果你使用的是奇妙的Control Hub，则跳过此步(该步骤理论上同一设备仅需一次)`
    - 在 Android 设备上启用开发者模式，并打开 USB 调试。
 4. 启动命令行工具(e.g. Win+R powershell)
