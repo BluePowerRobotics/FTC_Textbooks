@@ -137,4 +137,4 @@ Markdown是一种轻量级的文本标记语言，能够让文档内容通过简
 
 ---
 
-更多语法和用法可参考[Markdown官方文档](https://markdown.com.cn/)。
+更多语法和用法可参考[Markdown官方文档](https://markdown.com.cn/cheat-sheet.html#总览)。 
