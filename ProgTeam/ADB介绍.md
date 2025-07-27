@@ -8,7 +8,7 @@ ADB 是 Android SDK 中的命令行工具，用于与 Android 设备通信并执
 
 ### b) 安装 & 启动
 1. 下载 Android SDK Platform Tools：（对于Android Studio用户，可以跳过此步骤，因为AS首次安装会自动下载。可以前往设置寻找sdk位置，从而找到platform-tools所在目录）
-   - 前往 [https://dl.google.com/android/repository/platform-tools-latest-windows.zip](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) 下载。
+   - 对于Windows,前往 [https://dl.google.com/android/repository/platform-tools-latest-windows.zip](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) 下载。
    - 对于MacOS[下载](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip)。
    - 对于Linux[下载](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)。如果你是尊贵的linux用户，那么你一定不再需要以下介绍了，对吧！
 2. 配置环境变量：
@@ -47,7 +47,7 @@ ADB 是 Android SDK 中的命令行工具，用于与 Android 设备通信并执
            ```cmd
            adb version
            ```
-3. 设备端配置：
+3. 设备端配置：`如果你使用的是奇妙的Control Hub，则跳过此步(该步骤理论上同一设备仅需一次)`
    - 在 Android 设备上启用开发者模式，并打开 USB 调试。
 4. 启动命令行工具(e.g. Win+R powershell)，打开ADB所在目录（e.g. cd "E:\FTC\adb\platform-tools"）
 
