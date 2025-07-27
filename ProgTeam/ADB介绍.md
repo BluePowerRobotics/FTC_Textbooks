@@ -11,7 +11,7 @@ ADB 是 Android SDK 中的命令行工具，用于与 Android 设备通信并执
    - 对于Windows,前往 [https://dl.google.com/android/repository/platform-tools-latest-windows.zip](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) 下载。
    - 对于MacOS[下载](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip)。
    - 对于Linux[下载](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)。如果你是尊贵的linux用户，那么你一定不再需要以下介绍了，对吧！
-2. 配置环境变量：
+2. 配置环境变量：(可跳过，如跳过需每次先加载ADB所在目录e.g. cd "E:\FTC\adb\platform-tools",并在以下每一行指令前加上".\")
    - 将解压后的 `platform-tools` 目录添加到系统 `PATH` 中。
    - 对于MacOS与Linux，
       1. 编辑 Shell 配置文件（根据你的 Shell 选择）：
@@ -32,14 +32,17 @@ ADB 是 Android SDK 中的命令行工具，用于与 Android 设备通信并执
          ```
    - 对于Windows，
       1. 打开 **系统设置**：
-         - 搜索并打开 **编辑系统环境变量** > 切换到 **高级** 选项卡 > 点击 **环境变量**。
+         - 搜索并打开 **查看高级系统设置(WIN10)** > 点击 **环境变量**。
+         ![第一步](./RES/WINDOWS_SETTING.PNG)
       2. 修改用户变量：
          - 在 **用户变量** 列表中找到 `Path`，双击编辑。
+         ![第二步](./RES/WINDOWS_SETTING_2.PNG)
          - 点击 **新建**，粘贴你的 `platform-tools` 完整路径（例如）：
            ```
            C:\Users\<用户名>\AppData\Local\Android\Sdk\platform-tools
            ```
            > 路径可能因安装位置而异（如 `C:\Android\Sdk\platform-tools`）。
+         ![第三步](./RES/WINDOWS_SETTING_3.PNG)
       3. 确认保存：
          - 点击 **确定** 关闭所有窗口。
       4. 验证：
@@ -47,9 +50,10 @@ ADB 是 Android SDK 中的命令行工具，用于与 Android 设备通信并执
            ```cmd
            adb version
            ```
+           ![第四步(这里显示error是因为没有连hub网络)](./RES/WINDOWS_ADB_CONFIG.PNG)
 3. 设备端配置：`如果你使用的是奇妙的Control Hub，则跳过此步(该步骤理论上同一设备仅需一次)`
    - 在 Android 设备上启用开发者模式，并打开 USB 调试。
-4. 启动命令行工具(e.g. Win+R powershell)，打开ADB所在目录（e.g. cd "E:\FTC\adb\platform-tools"）
+4. 启动命令行工具(e.g. Win+R powershell)
 
 ### c) 用法（加*号表示常用命令）
 
