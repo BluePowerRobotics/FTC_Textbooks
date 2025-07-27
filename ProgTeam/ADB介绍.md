@@ -110,9 +110,9 @@ adb -help
 ### d) 练习
 > **问题**：如何启用ControlHub无线 ADB 连接？  
 > **答案**：
-> 0. 打开 Control Hub ，有线链接至其C口 注意，即使使用无限传输，也需要有线连接开启端口！！此后同一设备不用再次设置，不同设备链接或被其他设备链接后需重新设置。
-> 1. `打开powershell或其他命令行工具，打开安装了ADB的目录 `
-> 2. `adb tcpip 5555`  （此步之后可拔掉C口的链接线）
-> 3. `adb connect <Android设备IP>:5555`  
-> 4. `adb devices` 确认连接成功。
-> 5. 如过程中断开链接，可尝试：1. `adb kill-server`后重试2; 2. 断开ControlHub电源，重新开机; 3.放弃ADB，选择有线链接。
+> 1. 打开 Control Hub ，有线链接至其C口 注意，即使使用无限传输，也需要有线连接开启端口！！此后同一设备不用再次设置，不同设备链接或被其他设备链接后需重新设置。
+> 2. 打开powershell或其他命令行工具，打开安装了ADB的目录 
+> 3. `adb tcpip 5555`  （此步之后可拔掉C口的链接线）
+> 4. `adb connect <Android设备IP>:5555`  
+> 5. `adb devices` 确认连接成功。
+> 6. 如过程中断开链接，可尝试：1. `adb kill-server`后重试2; 2. 断开ControlHub电源，重新开机; 3.放弃ADB，选择有线链接。
