@@ -1,7 +1,5 @@
 # [BluePowerRobotics](https://BluePowerRobotics.github.io)
 
-以下是所有人必修内容。
-
 ## 目录
 
 - [所有人必修](#所有人必修)
