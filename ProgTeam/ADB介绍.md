@@ -9,6 +9,8 @@ ADB 是 Android SDK 中的命令行工具，用于与 Android 设备通信并执
 ### b) 安装 & 启动
 1. 下载 Android SDK Platform Tools：
    - 前往 [https://dl.google.com/android/repository/platform-tools-latest-windows.zip](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) 下载。
+   - 对于MacOS[下载](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip)。
+   - 对于Linux[下载](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)。如果你是尊贵的linux用户，那么你一定不再需要以下介绍了，对吧！
 2. 配置环境变量：
    - 将解压后的 `platform-tools` 目录添加到系统 `PATH` 中。
 3. 设备端配置：
