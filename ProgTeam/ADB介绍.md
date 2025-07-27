@@ -10,7 +10,7 @@ ADB 是 Android SDK 中的命令行工具，用于与 Android 设备通信并执
 1. 下载 Android SDK Platform Tools：
    - 前往 [https://dl.google.com/android/repository/platform-tools-latest-windows.zip](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) 下载。
 2. 配置环境变量：
-   - 将解压后的 `platform-tools` 目录添加到系统 `PATH` 中。
+   - 将解压后的 `platform-tools` 目录添加到系统 `PATH` 中。(可以避免在之后每一条指令前加上.\，如果不在意可跳过）
 3. 设备端配置：
    - 在 Android 设备上启用开发者模式，并打开 USB 调试。
 4. 启动命令行工具(e.g. Win+R powershell)，打开ADB所在目录（e.g. cd "E:\FTC\adb\platform-tools"）
