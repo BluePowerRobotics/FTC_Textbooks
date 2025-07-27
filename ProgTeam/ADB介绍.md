@@ -13,19 +13,23 @@ ADB 是 Android SDK 中的命令行工具，用于与 Android 设备通信并执
    - 将解压后的 `platform-tools` 目录添加到系统 `PATH` 中。
 3. 设备端配置：
    - 在 Android 设备上启用开发者模式，并打开 USB 调试。
+4. 启动命令行工具(e.g. Win+R powershell)，打开ADB所在目录（e.g. cd "E:\FTC\adb\platform-tools"）
 
-### c) 用法
+### c) 用法（加*号表示常用命令）
 
 #### i. 设备管理
 ```bash
-# 列出连接的设备
-adb devices
+# *列出连接的设备
+adb devices  
 
-# 连接无线设备
+# *连接无线设备
 adb connect <IP:端口>
 
 # 断开设备
 adb disconnect
+
+# *断开所有设备
+adb kill-server
 ```
 
 #### ii. 应用管理
@@ -96,7 +100,7 @@ am force-stop <包名>
 
 #### viii. 其他
 ```bash
-# 启用无线 ADB
+# *启用无线 ADB
 adb tcpip <端口>
 
 # 查看帮助
@@ -104,7 +108,11 @@ adb -help
 ```
 
 ### d) 练习
-> **问题**：已通过有线连接 Android 设备，如何启用无线 ADB 连接？  
-> **答案**：  
-> 1. `adb tcpip 5555`  
-> 2. `adb connect <Android设备IP>:5555`  
+> **问题**：如何启用ControlHub无线 ADB 连接？  
+> **答案**：
+> 0. 打开 Control Hub ，有线链接至其C口 注意，即使使用无限传输，也需要有线连接开启端口！！此后同一设备不用再次设置，不同设备链接或被其他设备链接后需重新设置。
+> 1. `打开powershell或其他命令行工具，打开安装了ADB的目录 `
+> 2. `adb tcpip 5555`  （此步之后可拔掉C口的链接线）
+> 3. `adb connect <Android设备IP>:5555`  
+> 4. `adb devices` 确认连接成功。
+> 5. 如过程中断开链接，可尝试：1. `adb kill-server`后重试2; 2. 断开ControlHub电源，重新开机; 3.放弃ADB，选择有线链接。
