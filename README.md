@@ -21,6 +21,7 @@
       - [2. 核心用户群体](#2-核心用户群体)
       - [3. 主要功能](#3-主要功能)
       - [4. 竞争优势](#4-竞争优势)
+      - [5.学习用法](#5学习用法)
   - [各部门必修](#各部门必修)
 
 ## 所有人必修
@@ -216,6 +217,96 @@ GitHub是一个基于Git的代码托管平台，提供：
 - 丰富的API接口
 - 强大的搜索功能
 - 完善的文档体系
+
+#### 5.学习用法
+
+1. 基础工作流程
+
+1.1 创建仓库
+- 点击右上角"+" → "New repository"
+- 填写仓库名称/描述
+- 选择公开/私有
+- 初始化README（推荐）
+官方文档：https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository
+
+1.2 基础操作
+• 克隆仓库：
+```bash
+git clone https://github.com/username/repo.git
+```
+• 提交更改：
+```bash
+git add .
+git commit -m "commit message"
+git push origin main
+```
+官方指南：https://guides.github.com/activities/hello-world/
+
+需要注意的是，可以通过下载`GitHub Desktop`简化操作流程或使用`Github Mobile`直接云端操作。
+
+2. 协作功能详解
+
+2.1 Pull Request流程
+1. Fork目标仓库
+2. 创建特性分支
+3. 提交修改
+4. 发起Pull Request
+5. 代码审查
+6. 合并代码
+文档：https://docs.github.com/en/pull-requests
+
+2.2 Issue管理
+• 创建：仓库 → Issues → New Issue
+• 标签分类
+• 分配负责人
+• 关联PR
+文档：https://guides.github.com/features/issues/
+
+3. 自动化配置（GitHub Actions）
+
+3.1 基础CI/CD
+1. 创建.github/workflows目录
+2. 编写YAML配置文件
+3. 推送触发执行
+示例配置：
+```yaml
+name: CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: make test
+```
+文档：https://docs.github.com/en/actions
+
+4. 项目管理
+
+4.1 Project看板
+• 创建：仓库 → Projects → New Project
+• 添加卡片（关联Issue/PR）
+• 自定义工作流状态
+文档：https://docs.github.com/en/issues/organizing-your-work-with-project-boards
+
+5. 高级功能
+
+5.1 Pages静态网站
+• 设置：Settings → Pages
+• 选择发布分支
+• 自动部署
+文档：https://pages.github.com/
+
+5.2 Codespaces云端开发
+• 在线VSCode环境
+• 预配置开发容器
+文档：https://docs.github.com/en/codespaces
+
+建议的学习路径：
+1. 先完成基础Hello World教程
+2. 实践Pull Request流程
+3. 尝试配置基础Actions
+4. 参与开源项目协作
 
 ## 各部门必修
 

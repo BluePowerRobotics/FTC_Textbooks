@@ -6,3 +6,4 @@
 2. [环境配置](环境配置.md)
 3. [FTC_SDK介绍](FTC_SDK介绍.md)
 4. [ADB介绍](ADB介绍.md)
+5. [GitHub协作介绍](GitHub协作介绍.md)
