@@ -228,6 +228,7 @@ GitHub是一个基于Git的代码托管平台，提供：
 1. 基础工作流程
 
 1.1 创建仓库
+
 - 点击右上角"+" → "New repository"
 - 填写仓库名称/描述
 - 选择公开/私有
@@ -236,15 +237,19 @@ GitHub是一个基于Git的代码托管平台，提供：
 
 1.2 基础操作
 • 克隆仓库：
+
 ```bash
 git clone https://github.com/username/repo.git
 ```
+
 • 提交更改：
+
 ```bash
 git add .
 git commit -m "commit message"
 git push origin main
 ```
+
 官方指南：https://guides.github.com/activities/hello-world/
 
 需要注意的是，可以通过下载`GitHub Desktop`简化操作流程或使用`Github Mobile`直接云端操作。
@@ -252,6 +257,7 @@ git push origin main
 2. 协作功能详解
 
 2.1 Pull Request流程
+
 1. Fork目标仓库
 2. 创建特性分支
 3. 提交修改
@@ -270,10 +276,12 @@ git push origin main
 3. 自动化配置（GitHub Actions）
 
 3.1 基础CI/CD
+
 1. 创建.github/workflows目录
 2. 编写YAML配置文件
 3. 推送触发执行
 示例配置：
+
 ```yaml
 name: CI
 on: [push]
@@ -284,30 +292,36 @@ jobs:
     - uses: actions/checkout@v2
     - run: make test
 ```
+
 文档：https://docs.github.com/en/actions
 
 4. 项目管理
 
 4.1 Project看板
-• 创建：仓库 → Projects → New Project
-• 添加卡片（关联Issue/PR）
-• 自定义工作流状态
+
+- 创建：仓库 → Projects → New Project
+- 添加卡片（关联Issue/PR）
+- 自定义工作流状态
+
 文档：https://docs.github.com/en/issues/organizing-your-work-with-project-boards
 
 5. 高级功能
 
 5.1 Pages静态网站
-• 设置：Settings → Pages
-• 选择发布分支
-• 自动部署
+
+- 设置：Settings → Pages
+- 选择发布分支
+- 自动部署
 文档：https://pages.github.com/
 
 5.2 Codespaces云端开发
-• 在线VSCode环境
-• 预配置开发容器
+
+- 在线VSCode环境
+- 预配置开发容器
 文档：https://docs.github.com/en/codespaces
 
 建议的学习路径：
+
 1. 先完成基础Hello World教程
 2. 实践Pull Request流程
 3. 尝试配置基础Actions
