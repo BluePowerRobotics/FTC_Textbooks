@@ -1,4 +1,4 @@
-# GitHub协作介绍
+# [GitHub协作介绍](README.md)
 
 ## 目录
 
@@ -56,7 +56,7 @@ GitHub官网是：[GitHub.com](https://github.com)。
 GitHub Copilot是（非常好用的）AI工具，可以访问gpt4等等工具。具有免费额度。（正常使用都是够的）
 
 建议配套github desktop使用。其图形化的界面简洁直观，且在对github的网络链接上表现稳定。
-下载链接：https://desktop.github.com/download/
+下载链接：`https://desktop.github.com/download/`
 
 看到喜欢的存储库，不妨点个Star，就像点赞一样。
 
@@ -73,8 +73,16 @@ GitHub Copilot是（非常好用的）AI工具，可以访问gpt4等等工具。
 
 2：每次commit需在提交标题中注明提交日期，提交人，修改内容（不必非常具体，一句话即可，有利于后续检索）
 
+这是一个很好的例子“722 gyb update ColorSensorDetector, colorSensorTest”——ZHZ
 
-这是一个很好的例子“722 gyb update ColorSensorDetector, colorSensorTest”
-
+> *（并非）——GYW*
+>
+> 正常的Commit信息应当书写的是你更新了什么功能，比如说`Fix The Calculation Problem In SixServoArmCalculator.java`，`Remove The Debug Telemetry in SixServoArmOutputter.java`诸如此类。
+>
+> ZHZ的方法是明显的偷懒——每次只修改时不需要思考就能够编写commit信息——后果就是其他人和自己一段时间后不打开具体内容根本不知道干了什么。
+>
+> 正确的方式应该是`每次Commit只做一件事情`，即你如果修改了多个文件，且关联不大，请分开commit——仅勾选部分内容。
+>
+> 同样的，请不要将commit当作保存键。一件未完成的工作上传，会影响其他人的工作——编译器数十个的报错，调用时混乱的逻辑——这些应当是可以避免的。
 
 3：一般情况下所有人均在master内工作即可，建议每天工作结束就提交一次。但如果对某些分功能（e.g. 视觉、机械臂）进行长期、单人的工作时也可以新建分支。
