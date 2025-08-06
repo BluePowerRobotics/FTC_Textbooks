@@ -21,41 +21,41 @@
 
 启动后，设置语言和主题。
 
-![](./RES/FreeCAD主界面.webp)
+![](./RES/FreeCAD主界面.jpeg)
 
 打开`参数视图`。
 
-![](./RES/FreeCAD参数视图.webp)
+![](./RES/FreeCAD参数视图.jpeg)
 
 打开`任务`（左侧），选择`创建草图`。
 
-![](./RES/FreeCAD选择草图附加平面.webp)
+![](./RES/FreeCAD选择草图附加平面.jpeg)
 
 选择基准面（比如XY基准面）并确认。
 
-![](./RES/FreeCAD草图编辑界面.webp)
+![](./RES/FreeCAD草图编辑界面.jpeg)
 
 开始绘制草图。
 
-![](./RES/FreeCAD编辑草图.webp)
+![](./RES/FreeCAD编辑草图.jpeg)
 
 绘制时，可以通过输入数值来控制图形。输入的数值将会变成自动约束，约束图形。
 
 绘制完成后，点击`close`。
 
-![](./RES/FreeCAD草图工具.webp)
+![](./RES/FreeCAD草图工具.jpeg)
 
 点击`任务`中的`凸台`构建凸台（需要草图中的线首尾相连且构成封闭图形）。
 
-![](./RES/FreeCAD凸台参数.webp)
+![](./RES/FreeCAD凸台参数.jpeg)
 
 完成后，点击顶面边线。
 
-![](./RES/FreeCAD边缘工具.webp)
+![](./RES/FreeCAD边缘工具.jpeg)
 
 点击左侧的`倒角`。
 
-![](./RES/FreeCAD倒角参数.webp)
+![](./RES/FreeCAD倒角参数.jpeg)
 
 点击`类型`选项。
 
