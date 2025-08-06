@@ -43,6 +43,19 @@
 | ![REV HD HEX MOTOR](/RES/HdHexMotor.jpg) ![Go Bilda Yellow Jacket Motor](/RES/YellowJacketPlanetaryGearMotor.jpg) | ![DSSERVO](/RES/DSSERVO.png) ![TIANKONGRC](/RES/TIANKONGRC.png) |
 | 通过两种线与机器人控制核心连接。电源线提供动力（黑/红），Encoder线获取旋转圈数（红蓝黑白）。特别地，对于Go Bilda电机，均需要特制转接线；这些线应当在购买时与电机配套。如果需要安装在难以拆卸/接线的位置（虽然不建议这么做），请提前将这两种线接好、拉到易于连接的地方。 | （又称为伺服电机）通过三根线（黑/红/白 或 褐/橙/黄）与机器人控制核心连接。对于180、270舵机，信号线（白或黄）向舵机传输角度；对于360舵机，信号线（白或黄）向舵机传输其旋转速度。若想要控制360舵机角度，可考虑磁传感。特别地，无论是何种范围的控制角度舵机，其实际可用角度大概率小于其标定角度：如170/180，255/270。不建议直接通过控制其旋转时间来间接控制角度。需要注意的是，若想要提高效率，工程部成员应当在安装舵机的时候请程电部成员测试/控制其初始角度而非自做主张安装。 |
 
+| 螺丝 | 螺母 |
+|:----:|:----:|
+|![螺丝](/RES/螺丝样例.webp)|![](/RES/螺母样例.webp)|
+| 对于螺丝，一般都采用`M(X)*(Y)`的表示方式，其中`X`表示螺丝（所对螺纹孔）的直径，`Y`表示螺丝的螺纹部分长度。 | 螺帽分为普通螺母、K形螺母、自锁螺母，K形螺母是在普通螺母的基础上安装了一圈K形、可转动的金属片，自锁螺母是在普通螺母基础上加上一定的尼龙材料，使得它需要一定力才能旋转。这两种理论上都是防滑的，但是K形螺母防滑性能在一般情况下几近于无，好处是便于安装；自锁更难装卸，但更牢固。 |
+
+关于螺丝种类：
+
+一般常用的是M3、M4螺丝。螺丝头分为多种，一般有：杯头内六角、薄头内六角、平头内六角（其厚度依次下降）圆头、外六角、十字螺丝等等（我们一般不太用）。建议能够统一的螺丝就使用同一型号。
+
+关于螺丝材质：
+
+一般有304不锈钢、8.8级白锌、12.9级碳钢（黑色）（硬度依次提升）。**绝对不要使用304的平头内六角螺丝。极其容易损坏。**
+
 ### 文档写法
 
 本教程采用Markdown标记语言进行编写。
@@ -169,9 +182,8 @@ GitHub是一个基于Git的代码托管平台，提供：
 
 #### 2. 核心用户群体
 
-- 软件开发人员（占比约78%）
-- 科研人员（特别是计算机相关领域）
-- DevOps工程师
+- 软件开发人员
+- 科研人员
 - 技术文档撰写者
 - 开源项目维护者
 - 技术学习者
@@ -183,45 +195,6 @@ GitHub是一个基于Git的代码托管平台，提供：
 - 支持各种编程语言的仓库
 - 提供无限公共仓库（免费账户）
 - 私有仓库协作（付费或教育账户）
-
-3.2 协作开发
-
-- Pull Request代码审查机制
-- Issue跟踪系统
-- Project看板管理
-- Wiki文档系统
-
-3.3 自动化
-
-- GitHub Actions持续集成/交付
-- 自动化测试部署
-- 第三方服务集成
-
-3.4 社区生态
-
-- 开源项目发现与参与
-- 技术讨论区
-- 开发者社交图谱
-
-#### 4. 竞争优势
-
-4.1 网络效应
-
-- 最大的开发者社区（超过1亿用户）
-- 绝大多数知名开源项目选择GitHub
-
-4.2 企业级支持
-
-- GitHub Enterprise解决方案
-- 完善的权限管理系统
-- 符合企业合规要求
-
-4.3 开发者体验
-
-- 直观的Web界面
-- 丰富的API接口
-- 强大的搜索功能
-- 完善的文档体系
 
 #### 5.学习用法
 
@@ -236,23 +209,14 @@ GitHub是一个基于Git的代码托管平台，提供：
 官方文档：https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository
 
 1.2 基础操作
-• 克隆仓库：
 
-```bash
-git clone https://github.com/username/repo.git
-```
+- 克隆仓库: clone
 
-• 提交更改：
+- 更新仓库: pull
 
-```bash
-git add .
-git commit -m "commit message"
-git push origin main
-```
+- 提交更改: push
 
-官方指南：https://guides.github.com/activities/hello-world/
-
-需要注意的是，可以通过下载`GitHub Desktop`简化操作流程或使用`Github Mobile`直接云端操作。
+需要注意的是，可以通过下载`GitHub Desktop`操作或使用`Github Mobile`直接云端操作。
 
 2. 协作功能详解
 
@@ -273,38 +237,6 @@ git push origin main
 • 关联PR
 文档：https://guides.github.com/features/issues/
 
-3. 自动化配置（GitHub Actions）
-
-3.1 基础CI/CD
-
-1. 创建.github/workflows目录
-2. 编写YAML配置文件
-3. 推送触发执行
-示例配置：
-
-```yaml
-name: CI
-on: [push]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - run: make test
-```
-
-文档：https://docs.github.com/en/actions
-
-4. 项目管理
-
-4.1 Project看板
-
-- 创建：仓库 → Projects → New Project
-- 添加卡片（关联Issue/PR）
-- 自定义工作流状态
-
-文档：https://docs.github.com/en/issues/organizing-your-work-with-project-boards
-
 5. 高级功能
 
 5.1 Pages静态网站
@@ -314,18 +246,11 @@ jobs:
 - 自动部署
 文档：https://pages.github.com/
 
-5.2 Codespaces云端开发
+5.2 云端开发
 
 - 在线VSCode环境
 - 预配置开发容器
 文档：https://docs.github.com/en/codespaces
-
-建议的学习路径：
-
-1. 先完成基础Hello World教程
-2. 实践Pull Request流程
-3. 尝试配置基础Actions
-4. 参与开源项目协作
 
 ## 各部门必修
 
