@@ -196,11 +196,11 @@ GitHub是一个基于Git的代码托管平台，提供：
 - 提供无限公共仓库（免费账户）
 - 私有仓库协作（付费或教育账户）
 
-#### 5.学习用法
+#### 4.学习用法
 
-1. 基础工作流程
+4.1. 基础工作流程
 
-1.1 创建仓库
+4.1.1 创建仓库
 
 - 点击右上角"+" → "New repository"
 - 填写仓库名称/描述
@@ -208,7 +208,7 @@ GitHub是一个基于Git的代码托管平台，提供：
 - 初始化README（推荐）
 官方文档：https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository
 
-1.2 基础操作
+4.1.2 基础操作
 
 - 克隆仓库: clone
 
@@ -218,9 +218,9 @@ GitHub是一个基于Git的代码托管平台，提供：
 
 需要注意的是，可以通过下载`GitHub Desktop`操作或使用`Github Mobile`直接云端操作。
 
-2. 协作功能详解
+4.2. 协作功能详解
 
-2.1 Pull Request流程
+4.2.1 Pull Request流程
 
 1. Fork目标仓库
 2. 创建特性分支
@@ -230,23 +230,23 @@ GitHub是一个基于Git的代码托管平台，提供：
 6. 合并代码
 文档：https://docs.github.com/en/pull-requests
 
-2.2 Issue管理
+4.2.2 Issue管理
 • 创建：仓库 → Issues → New Issue
 • 标签分类
 • 分配负责人
 • 关联PR
 文档：https://guides.github.com/features/issues/
 
-5. 高级功能
+4.3. 高级功能
 
-5.1 Pages静态网站
+4.3.1 Pages静态网站
 
 - 设置：Settings → Pages
 - 选择发布分支
 - 自动部署
 文档：https://pages.github.com/
 
-5.2 云端开发
+4.3.2 云端开发
 
 - 在线VSCode环境
 - 预配置开发容器
