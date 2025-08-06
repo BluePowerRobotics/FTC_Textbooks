@@ -48,10 +48,10 @@ ADB 是 Android SDK 中的命令行工具，用于与 Android 设备通信并执
    - 对于Windows，
       1. 打开 **系统设置**：
          - 搜索并打开 **查看高级系统设置(WIN10)** > 点击 **环境变量**。
-         ![第一步](./RES/WINDOWS_SETTING.PNG)
+         ![第一步](./RES/WINDOWS_SETTING.jpeg)
       2. 修改用户变量：
          - 在 **用户变量** 列表中找到 `Path`，双击编辑。
-         ![第二步](./RES/WINDOWS_SETTING_2.PNG)
+         ![第二步](./RES/WINDOWS_SETTING_2.jpeg)
          - 点击 **新建**，粘贴你的 `platform-tools` 完整路径（例如）：
 
            ```cmd
@@ -59,7 +59,7 @@ ADB 是 Android SDK 中的命令行工具，用于与 Android 设备通信并执
            ```
 
            > 路径可能因安装位置而异（如 `C:\Android\Sdk\platform-tools`）。
-         ![第三步](./RES/WINDOWS_SETTING_3.PNG)
+         ![第三步](./RES/WINDOWS_SETTING_3.jpeg)
       3. 确认保存：
          - 点击 **确定** 关闭所有窗口。
       4. 验证：
@@ -69,7 +69,7 @@ ADB 是 Android SDK 中的命令行工具，用于与 Android 设备通信并执
            adb version
            ```
 
-           |![第四步(这里显示error是因为没有连hub网络)](./RES/WINDOWS_ADB_CONFIG.PNG)|
+           |![第四步(这里显示error是因为没有连hub网络)](./RES/WINDOWS_ADB_CONFIG.jpeg)|
            |:---:|
            |*这里显示error是因为没有连hub网络*|
 
