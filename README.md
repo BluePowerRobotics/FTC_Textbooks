@@ -227,10 +227,11 @@ GitHub是一个基于Git的代码托管平台，提供：
 文档：https://docs.github.com/en/pull-requests
 
 4.2.2 Issue管理
-• 创建：仓库 → Issues → New Issue
-• 标签分类
-• 分配负责人
-• 关联PR
+
+- 创建：仓库 → Issues → New Issue
+- 标签分类
+- 分配负责人
+- 关联PR
 文档：https://guides.github.com/features/issues/
 
 4.3. 高级功能
