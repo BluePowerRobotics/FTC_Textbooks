@@ -255,4 +255,4 @@ GitHub是一个基于Git的代码托管平台，提供：
 
 - [机械动力研究设计(工程)](/EngiTeam/README.md)
 
-- [商业宣传与外交联络(商宣)](/BusiTeam/.README.md)
+- [商业宣传与外交联络(商宣)](/BusiTeam/README.md)
